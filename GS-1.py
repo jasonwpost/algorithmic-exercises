@@ -1,3 +1,16 @@
+# Simple verison of the Gale Shapely algorithm 
+# This just checks if a matching is perfect and
+# stable
+
+# input is divided by lines - first line is number of test cases
+# then for each test case, one line represents size of the sets ( |M| = |W| )
+# then for each figure in the set, a list of preferences per line
+# for example for a figure in set M, preferences might be W1 W2 W3 
+# for a set of size 3
+
+# outputs a stable matching 
+
+
 class Man:
     ID = None
     preferences = []
@@ -9,7 +22,6 @@ class Man:
     def __init__(self, ID):
         self.ID = ID
 
-    #=== end of class
 
 class Woman:
     ID = None
@@ -20,7 +32,6 @@ class Woman:
     def __init__(self, ID):
         self.ID = ID
 
-    #=== end of class
 
 def getCase():
     numOfPref = int(input())
@@ -116,7 +127,6 @@ def getCase():
 
 
 def checkStableMatching(men, women, matching, numOfPref):
-    #print("Hello")
     isStable = True
 
     # check every partner has a partner (definition one)
@@ -126,9 +136,8 @@ def checkStableMatching(men, women, matching, numOfPref):
         return
 
     # manCoefficient = 0
-    # for every match, lets check if
+    # for every match, lets check if...
     for man in men:
-        # man = men[manCoefficient]
 
         for pref in man.preferences:
             '''
@@ -148,7 +157,6 @@ def checkStableMatching(men, women, matching, numOfPref):
                 break
             else: # nothing unusal here - keep checking
                 continue
-        # manCoefficient+= 1
 
     results.append(isStable)
 
@@ -158,13 +166,11 @@ def prefers(woman, man):
     potentialChoiceIndexF = woman.inversePref[man.ID-1]
     currentChoiceIndexM = man.inversePref[man.engagedTo-1]
     potentialChoiceIndexM = man.inversePref[woman.ID-1]
-    # print(str(currentChoiceIndex) + " " + str(potentialChoiceIndex))
     if ((currentChoiceIndexF > potentialChoiceIndexF) and (currentChoiceIndexM > potentialChoiceIndexM)):
         return True
     else:
         return False
 
-    # == end of prefers function
 
 def printStability(isStable):
     if (isStable):
@@ -180,7 +186,11 @@ def test_not_Engaged(men, women):
         if w.engagedTo == None:
             return True
 
-# starts here
+# # # # # # # #
+# starts here #
+# # # # # # # #
+
+
 results = []
 numOfTestCases = int(input())
 

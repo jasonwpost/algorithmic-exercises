@@ -1,3 +1,12 @@
+# Full verison of the Gale Shapely algorithm 
+# This checks if a matching is possible given a list of preferences
+
+# input is divided by lines - first line is number of test cases
+# then for each test case, one line represents size of the sets ( |M| = |W| )
+# then for each figure in the set, a list of preferences per line
+# for example for a figure in set M, preferences might be W1 W2 W3 
+# for a set of size 3
+
 class Man:
     ID = None
     isFree = True

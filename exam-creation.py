@@ -62,7 +62,6 @@ def getInput():
 			q = raw_input()
 			q = q.split(" ")
 
-			#q = [x.lower() for x in q]
 			qsInDB.append(q)
 
 		if numOfQReq > numOfQInDB:
