@@ -1,7 +1,14 @@
-# COMPSCI 320 Assignment 3
-# jpos457
-# Jason Post
-# Check intersecting wires (adapting the Divide and Conquer inversions problem)
+# Count number of crossing wires 
+
+# Given a list of wire positions on two buildings, count the number crossing wires
+# wires can't share the same position
+
+# input is divided up into lines - first line is number of test cases
+# second line is number of wires
+# rest of the lines represent the wire positions (i.e. 5 4 means position 5 on
+# one building, and 4 on another)
+
+# This problem is basically just adapting the Divide and Conquer inversions problem
 
 import math
 #from builtins import input
