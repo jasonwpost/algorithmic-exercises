@@ -18,7 +18,6 @@ class Man:
     def __init__(self, ID):
         self.ID = ID
 
-    #=== end of class definition
 
 class Woman:
     ID = None
@@ -30,7 +29,6 @@ class Woman:
     def __init__(self, ID):
         self.ID = ID
 
-    #=== end of class
 
 
 def getCase():
@@ -102,8 +100,6 @@ def getCase():
 
     getMatching(men, women)
 
-    #===== end of getCase function
-
 
 def getMatching(men, women):
 
@@ -162,8 +158,6 @@ def getMatching(men, women):
         message = message+"W" + str(man.engagedTo.ID) + " "
     print message
 
-    # --- end of get matching function
-
 
 # does the woman prefer this man to her current choice ?
 def prefers(woman, man):
@@ -175,8 +169,9 @@ def prefers(woman, man):
     else:
         return False
 
-    # == end of prefers function
-
+# # # # # # # #
+# starts here #
+# # # # # # # #
 
 numOfTestCases = int(input())
 
