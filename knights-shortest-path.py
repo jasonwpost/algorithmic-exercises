@@ -1,7 +1,12 @@
-# COMPSCI 320: Applied Agorithmics
-# jpos457
-# Jason Post
-# Assignment 4: Knight's Shortest Path
+# Knight's Shortest Path problem
+
+# Given integers X and Y (representing number of squares in a X * Y board), 
+# print the smallest number of moves needed for a knight to traverse the 
+# board from corner to corner, and the number of possible paths with that
+# number of moves. 
+
+# This is a dynamic programming problem
+
 
 knight_moves_hor = [-2, -2, 2, 2, -1, -1, 1, 1]
 knight_moves_ver = [-1, 1, -1, 1, -2, 2, -2, 2]
