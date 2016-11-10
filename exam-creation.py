@@ -1,6 +1,20 @@
-# COMPSCI 320: Applied Algorithmics
-# A6: Exam Creation Problem
-# jpos457
+# Exam Creation Problem
+
+# We have a database of exam questions and we would like to create
+# an exam with the questions in the data base. We have specific topics 
+# and specific difficulty levels we would like to include in our exam 
+# and we want to know if there are enough questions in the database for 
+# us to create the exam
+
+# input is broken up by input lines: 
+# {number of questions in database} {number of questions we want}
+# {k strings representing difficulty}
+# {k strings representing the topics we want}
+# and the remaining lines represent the database:
+# {name of question} {topic of question} {difficulty of question}
+
+
+
 
 
 # Trick is to model this like a bipartitle graph with network flow
